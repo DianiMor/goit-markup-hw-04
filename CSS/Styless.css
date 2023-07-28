@@ -12,13 +12,22 @@ ul {
 .container{
     width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: row;
 }
+
+
+
 
 .container-header2{
     display: flex;
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    
 }
 
 .contenedor{
@@ -30,6 +39,7 @@ ul {
     display: flex;
     gap: 30px;
     justify-content: center;
+    padding-left: 115px;
 }
 
 .container-header-hijo1{
@@ -199,6 +209,48 @@ button:hover {
     align-items: flex-start;
 }
 
+.img-dedicamos1{
+    background-image: url(../images/img1.jpg);
+    width: 370px;
+    height: 294px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.img-dedicamos2{
+    background-image: url(../images/img2.jpg);
+    width: 370px;
+    height: 294px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.img-dedicamos3{
+    background-image: url(../images/img3.jpg);
+    width: 370px;
+    height: 294px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.txt-img-dedicamos{
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+    font-weight: 700px;
+    text-align: center;
+    background-color: rgb (47,48,58,0.8);
+    width: 370px;
+    height: 70px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
 .txtaquenos {
 
 font-style: normal;
@@ -252,21 +304,18 @@ top: 1696px;
 .container-txtprofes{
     padding-bottom: 10px;
     text-align: center;
-    padding-bottom: 50px;
  
 }
 
 .container-profes-hijo2{
     display: flex;
     margin: 0px;
-
     align-items: center;
     gap: 50px;
 }
 
 .container-profes-hijo2 li{
     background-color: #FFFFFF;
-   
     gap: 10px;
 }
 
@@ -306,7 +355,8 @@ color: #FFFFFF;
     font-weight: 500px;
     text-decoration: none;
     color: #FFFFFF;
-    padding: 50px;
+    padding: 1px;
+
 }
 .webfooter {
 font-family: Raleway;
@@ -415,7 +465,12 @@ justify-content: center;
 .icon-grupo2 {
     width: 20px;
     height: 20px; 
-    margin: 0 15px;
+    fill: #AFB1B8;
+}
+
+.redes-conj:hover .icon-grupo2{
+background-color: #2196F3FF;
+fill: #FFFFFF;
 }
 
 .icon-header li{
@@ -427,14 +482,37 @@ height: 12px
     display: flex;
     gap: 10px;
     cursor: pointer;
-
+    justify-content: space-between;
+    margin: 16px 32px 30px 32px;
+    padding: 0px;
 }
 
-.redessociales-profes:hover {
+.redessociales-profes li{
+width: 40px;
+height: 40px;
+text-align: center;
+box-shadow: none;
+border-radius: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+
+.redes-conj{
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border-width: 44px;
+}
+
+
+.redessociales-profes .redes-conj:hover {
 background-color: #2196F3;
+fill: #FFFFFF;
 }
-
-
 
 .icon-header{
     width: 16px;
@@ -444,7 +522,6 @@ background-color: #2196F3;
 
 .txtsuperior:hover .icon-header {
     fill: #2196F3;
-   
     }
 
 .icon-telfono-inteligente:hover{
@@ -452,8 +529,8 @@ background-color: #2196F3;
     }
 
 .clientes-regulares{
-    padding-bottom: 151px;
-    padding-top: 59px;
+    padding-bottom: 60px;
+    padding-top: 10px;
 }
 
 .lista-logos{
@@ -471,6 +548,7 @@ background-color: #2196F3;
 
 .icon-logos-clientes:hover{
     border-color: #2196F3;
+    fill: #2196F3;
 }
 
 .icon-logos-clientes:hover .icon-clientes {
@@ -487,17 +565,19 @@ background-color: #2196F3;
     display: flex;
 }
 
-.redes-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+
 
 .encuentranos-h2{
     color: #FFFFFF;
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .lista-redes-footer{
@@ -523,4 +603,9 @@ background-color: #2196F3;
     width: 20px;
     height: 20px;
     fill: #FFFFFF;
+}
+
+.clientes-regulares h2{
+    display: flex;
+    justify-content: center;
 }
