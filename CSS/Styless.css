@@ -21,10 +21,9 @@ ul {
 
 
 
-
 .container-header2{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 30px;
     
@@ -39,7 +38,6 @@ ul {
     display: flex;
     gap: 30px;
     justify-content: center;
-    padding-left: 115px;
 }
 
 .container-header-hijo1{
@@ -48,6 +46,7 @@ ul {
     padding: 0;
     gap: 30px;
     align-items: center;
+    position: relative;
 }
 
 .container-header-hijo2{
@@ -80,12 +79,42 @@ ul {
     letter-spacing: 0.03em;
     color: #212121;
     text-decoration: none;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.textoder{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.41px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-decoration: none;
     
 }
+
+.textoder:hover{
+    color: #2196F3;
+}
+
 
 .txtsuperior:hover {
     color: #2196F3;
 }
+
+.txtsuperior:hover::after {
+    position: absolute;
+    border: 2px solid #2196F3;
+    border-radius: 10px;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+    content: " ";
+    padding: 0;
+}
+
 
 .txttel:hover{
     color: #2196F3;
@@ -358,6 +387,22 @@ color: #FFFFFF;
     padding: 1px;
 
 }
+
+.container-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px;
+    gap: 50px;
+}
+
+.container-footer ul{
+    padding: 0;
+
+}
 .webfooter {
 font-family: Raleway;
 font-size: 26px;
@@ -575,9 +620,8 @@ fill: #FFFFFF;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+
+
 }
 
 .lista-redes-footer{
