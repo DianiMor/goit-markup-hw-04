@@ -15,7 +15,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: row;
 }
 
@@ -83,7 +83,7 @@ ul {
     padding-bottom: 30px;
 }
 
-.textoder{
+/* .textoder{
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -97,7 +97,7 @@ ul {
 
 .textoder:hover{
     color: #2196F3;
-}
+} */
 
 
 .txtsuperior:hover {
