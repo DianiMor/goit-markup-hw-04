@@ -385,6 +385,7 @@ color: #FFFFFF;
     text-decoration: none;
     color: #FFFFFF;
     padding: 1px;
+    width: auto;
 
 }
 
@@ -589,6 +590,7 @@ fill: #FFFFFF;
     width: 170px;
     height: 81px;
     padding: 17px 41px;
+    
 }
 
 .icon-logos-clientes:hover{
@@ -651,4 +653,13 @@ fill: #FFFFFF;
 .clientes-regulares h2{
     display: flex;
     justify-content: center;
+}
+
+.lista-logos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-left: 80px;
+    padding-right: 80px;
 }
